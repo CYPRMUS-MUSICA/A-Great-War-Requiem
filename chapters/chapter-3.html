@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chapter III — The Score · A Great War Requiem</title>
+<meta name="description" content="Interactive score viewer for A Great War Requiem — browse all seven movements page by page with lyrics and composer commentary." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body class="page-score">
+
+<nav class="nav" aria-label="Primary">
+  <a class="nav__brand" href="../index.html"><em>A</em> Great War <strong>Requiem</strong></a>
+  <button class="menu-toggle" data-menu-toggle aria-label="Toggle menu">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+  </button>
+  <div class="nav__links">
+    <a href="../index.html">Home</a>
+    <a href="chapter-1.html">I · Prelude</a>
+    <a href="chapter-2.html">II · Poets</a>
+    <a href="chapter-3.html" aria-current="page">III · Score</a>
+    <a href="chapter-4.html">IV · Analysis</a>
+    <a href="chapter-5.html">V · Postlude</a>
+    <a href="../bibliography.html">Bibliography</a>
+  </div>
+  <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
+</nav>
+<div class="progress-bar"></div>
+
+<header class="chapter-head reveal">
+  <p class="chapter-head__roman">III</p>
+  <p class="chapter-head__kicker">The Score</p>
+  <h1 class="chapter-head__title">A Great War Requiem<br><em>interactive score</em></h1>
+  <p class="chapter-head__sub">Seven movements · SATB choir and organ · approximately forty minutes</p>
+</header>
+
+<section class="score-intro reveal" aria-label="About the score">
+  <p>
+    <em>A Great War Requiem</em> is a seven-movement setting for SATB choir and organ. Each movement pairs a traditional Requiem Mass plainchant with a poem by one of four women of the Great War — Vera Brittain, Winifred M. Letts, Margaret Cole, or Josephine Preston Peabody — weaving voices silenced by history into the Requiem's liturgical frame.
+  </p>
+  <p class="score-intro__tip">
+    Use the movement tabs to jump between sections, the thumbnail rail to skip pages, <kbd>←</kbd> / <kbd>→</kbd> to page through, or click the score to zoom.
+  </p>
+</section>
+
+<main id="main" class="score-main" data-score-viewer>
+  <div class="movement-tabs" role="tablist" aria-label="Movements"></div>
+
+  <div class="score-layout">
+    <section class="score-panel score-panel--viewer">
+      <header class="score-meta">
+        <h2 class="score-meta__title">Movement I · Requiem aeternam et Rest</h2>
+        <p class="score-meta__poet">Requiem Mass · Margaret Cole</p>
+        <p class="score-meta__tempo">Lento doloroso ♩ = 56</p>
+      </header>
+
+      <div class="score-controls" role="toolbar" aria-label="Score controls">
+        <button class="score-btn" data-score-prev aria-label="Previous page">‹ Prev</button>
+        <span class="score-page-info" aria-live="polite">Page 1 of 1</span>
+        <button class="score-btn" data-score-next aria-label="Next page">Next ›</button>
+        <span class="score-spacer" aria-hidden="true"></span>
+        <button class="score-btn score-btn--ghost" data-score-zoom aria-label="Toggle zoom">Zoom</button>
+        <button class="score-btn score-btn--ghost" data-score-download aria-label="Download full PDF">PDF ↓</button>
+      </div>
+
+      <div class="score-viewer">
+        <img class="score-page" src="" alt="Score page" />
+      </div>
+
+      <div class="score-thumbs" role="tablist" aria-label="Score pages"></div>
+    </section>
+
+    <aside class="score-panel score-panel--aside">
+      <section class="score-lyrics-wrap">
+        <h3 class="score-panel__h">Text & Poetry</h3>
+        <pre class="score-lyrics"></pre>
+      </section>
+      <section class="score-notes-wrap">
+        <h3 class="score-panel__h">Composer's Notes</h3>
+        <p class="score-notes"></p>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<nav class="chapter-nav" aria-label="Chapter navigation">
+  <a class="prev" href="chapter-2.html"><span class="label">← Chapter II</span><span class="title">An Exploration of Rest, Loss, and Death</span></a>
+  <a class="next" href="chapter-4.html"><span class="label">Chapter IV →</span><span class="title">Analysis of A Great War Requiem</span></a>
+</nav>
+
+<footer class="site-footer">
+  <p class="dedication">In memory of Tammy Tallacksen Cypret and Wendall Cypret.</p>
+  <p>© 2024 Kaylene Cypret · University of Northern Colorado · Doctor of Arts in Music Composition</p>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/score.js"></script>
+</body>
+</html>
